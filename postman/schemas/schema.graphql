@@ -1,5 +1,5 @@
 type Query {
-        "获取所有书"
+        "获取所有书11111"
         books: [Book]!
         bookById(queryParameter:BookQueryParam): Book
     }
