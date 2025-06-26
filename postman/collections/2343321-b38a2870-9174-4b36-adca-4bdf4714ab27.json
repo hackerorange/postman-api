@@ -226,7 +226,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    },\n    {\n        \"uid\": \"a02\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf222\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"description\": \"混凝土 C30\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    },\n    {\n        \"uid\": \"a02\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf222\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
