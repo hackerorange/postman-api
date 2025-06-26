@@ -1,0 +1,359 @@
+{
+	"info": {
+		"_postman_id": "2343321-b38a2870-9174-4b36-adca-4bdf4714ab27",
+		"name": "工料机标准",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "ai任务",
+			"item": [
+				{
+					"name": "创建AI智能匹配任务",
+					"id": "2343321-a9a49fda-56ed-4ad7-8586-54be74b62f12",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"uid\": \"1\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取AI智能匹配任务的信息",
+					"id": "2343321-a3455b3b-1a2e-4a08-8e72-4ccaa55d6187",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取AI智能匹配任务的当前状态",
+					"id": "2343321-aee5754c-2579-41ef-b47b-6e9f4accf96d",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/status",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"status"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "启动任务",
+					"id": "2343321-1b8a75c1-cc96-4f82-87bc-574eb7fd83c3",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/start",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"start"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取ai匹配任务的详情列表",
+					"id": "2343321-423ab4ba-7342-4cc2-add7-919a815a52eb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/details",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"details"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2343321-fa63e686-f70e-4921-a186-e672d3ce060c"
+		},
+		{
+			"name": "ai任务详情",
+			"item": [
+				{
+					"name": "向AI智能匹配任务中添加输入",
+					"id": "2343321-919d01f4-b60c-4f50-82dd-0ba752f06ee4",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    },\n    {\n        \"uid\": \"a02\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf222\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"items"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"id": "2343321-70595b23-eba3-4926-9051-ab266a8bb4a5"
+		},
+		{
+			"name": "获取ai匹配任务的详情",
+			"id": "2343321-bb6680bd-6b76-4d5d-89f6-cad41f82f24c",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{domain}}/{{service-prefix}}/v4/aiTaskDetails/:aiTaskDetailId",
+					"host": [
+						"{{domain}}"
+					],
+					"path": [
+						"{{service-prefix}}",
+						"v4",
+						"aiTaskDetails",
+						":aiTaskDetailId"
+					],
+					"variable": [
+						{
+							"key": "aiTaskDetailId",
+							"value": "1037866620142080"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"auth": {
+		"type": "bearer",
+		"bearer": [
+			{
+				"key": "token",
+				"value": "{{geipToken}}",
+				"type": "string"
+			}
+		]
+	},
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"id": "fbc15a07-b15b-4bd8-a2ad-a17fe0aef141",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"id": "145368d3-175d-4cd5-93d9-42b58d501769",
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "service-prefix",
+			"value": "api/lmm-standard/v4",
+			"type": "string"
+		},
+		{
+			"key": "x-product-code",
+			"value": "gpmpp_standard-material",
+			"type": "string"
+		},
+		{
+			"key": "aiTaskId",
+			"value": "1039059651592704",
+			"type": "default"
+		},
+		{
+			"key": "sceneCode",
+			"value": "",
+			"type": "string"
+		}
+	]
+}
