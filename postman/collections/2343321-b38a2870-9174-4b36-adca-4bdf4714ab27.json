@@ -279,13 +279,15 @@
 					}
 				},
 				"url": {
-					"raw": "{{domain}}/{{service-prefix}}/v4/aiTaskDetails/:aiTaskDetailId",
+					"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskDetails/:aiTaskDetailId",
 					"host": [
 						"{{domain}}"
 					],
 					"path": [
 						"{{service-prefix}}",
 						"v4",
+						"aiScenes",
+						"{{sceneCode}}",
 						"aiTaskDetails",
 						":aiTaskDetailId"
 					],
