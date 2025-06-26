@@ -291,6 +291,41 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "向AI智能匹配任务中添加输入 Copy 2",
+					"id": "2343321-de135fa4-01e8-4c67-aae2-1847272f53fb",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[1039076571652608]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskItems/list-by-ids",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTaskItems",
+								"list-by-ids"
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "2343321-70595b23-eba3-4926-9051-ab266a8bb4a5"
