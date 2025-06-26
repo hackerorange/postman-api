@@ -311,7 +311,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskItems/list-by-ids",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskItems/status-by-ids",
 							"host": [
 								"{{domain}}"
 							],
@@ -321,7 +321,7 @@
 								"aiScenes",
 								"{{sceneCode}}",
 								"aiTaskItems",
-								"list-by-ids"
+								"status-by-ids"
 							]
 						}
 					},
