@@ -264,7 +264,7 @@
 						"disableBodyPruning": true
 					},
 					"request": {
-						"method": "PUT",
+						"method": "POST",
 						"header": [],
 						"body": {
 							"mode": "raw",
@@ -276,7 +276,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskItems/list-by-ids",
 							"host": [
 								"{{domain}}"
 							],
@@ -285,16 +285,8 @@
 								"v4",
 								"aiScenes",
 								"{{sceneCode}}",
-								"aiTasks",
-								":aiTaskId",
-								"items"
-							],
-							"variable": [
-								{
-									"id": "92fe3930-5099-4a52-be93-5a74e71c06c4",
-									"key": "aiTaskId",
-									"value": "{{aiTaskId}}"
-								}
+								"aiTaskItems",
+								"list-by-ids"
 							]
 						}
 					},
