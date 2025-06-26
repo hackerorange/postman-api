@@ -144,7 +144,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/start",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/start?restart=true",
 							"host": [
 								"{{domain}}"
 							],
@@ -156,6 +156,12 @@
 								"aiTasks",
 								":aiTaskId",
 								"start"
+							],
+							"query": [
+								{
+									"key": "restart",
+									"value": "true"
+								}
 							],
 							"variable": [
 								{
