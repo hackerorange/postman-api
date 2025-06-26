@@ -186,7 +186,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/details",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
 							"host": [
 								"{{domain}}"
 							],
@@ -197,7 +197,7 @@
 								"{{sceneCode}}",
 								"aiTasks",
 								":aiTaskId",
-								"details"
+								"items"
 							],
 							"variable": [
 								{
