@@ -329,47 +329,6 @@
 				}
 			],
 			"id": "2343321-70595b23-eba3-4926-9051-ab266a8bb4a5"
-		},
-		{
-			"name": "获取ai匹配任务的详情",
-			"id": "2343321-bb6680bd-6b76-4d5d-89f6-cad41f82f24c",
-			"protocolProfileBehavior": {
-				"disableBodyPruning": true
-			},
-			"request": {
-				"method": "GET",
-				"header": [],
-				"body": {
-					"mode": "raw",
-					"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
-					"options": {
-						"raw": {
-							"language": "json"
-						}
-					}
-				},
-				"url": {
-					"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTaskDetails/:aiTaskDetailId",
-					"host": [
-						"{{domain}}"
-					],
-					"path": [
-						"{{service-prefix}}",
-						"v4",
-						"aiScenes",
-						"{{sceneCode}}",
-						"aiTaskDetails",
-						":aiTaskDetailId"
-					],
-					"variable": [
-						{
-							"key": "aiTaskDetailId",
-							"value": "1037866620142080"
-						}
-					]
-				}
-			},
-			"response": []
 		}
 	],
 	"auth": {
