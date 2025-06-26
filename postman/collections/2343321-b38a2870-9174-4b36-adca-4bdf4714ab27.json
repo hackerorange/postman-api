@@ -256,6 +256,49 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "向AI智能匹配任务中添加输入 Copy",
+					"id": "2343321-775414ac-e4f2-4347-b861-8534e51ae682",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    },\n    {\n        \"uid\": \"a02\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf222\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"items"
+							],
+							"variable": [
+								{
+									"id": "92fe3930-5099-4a52-be93-5a74e71c06c4",
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			],
 			"id": "2343321-70595b23-eba3-4926-9051-ab266a8bb4a5"
