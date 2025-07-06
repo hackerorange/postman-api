@@ -352,7 +352,7 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "c4af911b-a4d4-4272-9a4c-2e0d249b9bc7",
+				"id": "a1bf1a11-4b9d-43b7-b12e-64b487feb005",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -363,7 +363,7 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "83dfc126-9090-46a4-8c2a-381d0036d124",
+				"id": "73b770e8-829f-4b1c-9dc5-20c9929f40c7",
 				"type": "text/javascript",
 				"packages": {},
 				"exec": [
@@ -390,7 +390,7 @@
 		},
 		{
 			"key": "sceneCode",
-			"value": "high-way-quantity",
+			"value": "smartBidGenerator",
 			"type": "string"
 		}
 	]
