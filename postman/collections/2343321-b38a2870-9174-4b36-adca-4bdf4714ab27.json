@@ -241,7 +241,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items?option=over",
 							"host": [
 								"{{domain}}"
 							],
@@ -253,6 +253,13 @@
 								"aiTasks",
 								":aiTaskId",
 								"items"
+							],
+							"query": [
+								{
+									"key": "option",
+									"value": "over",
+									"type": "text"
+								}
 							],
 							"variable": [
 								{
