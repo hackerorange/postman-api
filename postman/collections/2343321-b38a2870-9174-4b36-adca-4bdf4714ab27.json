@@ -233,7 +233,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"description\": \"混凝土 C30\",\n            \"unit\": \"m3\"\n        }\n    },\n    {\n        \"uid\": \"a02\",\n        \"input\": {\n            \"description\": \"混凝土 C30\",\n            \"unit\": \"m3\"\n        }\n    }\n]",
+							"raw": "[\n    {\n        \"uid\": \"xxx\",\n        \"structureType\": \"上部结构-预制T梁-预制部分\",\n        \"quantityContentName\": \"混凝土-C50\",\n        \"unit\": \"m3\",\n        \"hasValue\": true,\n        \"value\": 6382.7,\n        \"isPrestressed\": \"预应力\",\n        \"tensioningMethod\": \"\", // 若无张拉方式，传空字符串\n        \"constructionMethod\": \"现浇\"\n    },\n    {\n        \"uid\": \"xxx\",\n        \"structureType\": \"上部结构-预制T梁-预制部分\",\n        \"quantityContentName\": \"混凝土-C50\",\n        \"unit\": \"m3\",\n        \"hasValue\": true,\n        \"value\": 6382.7,\n        \"isPrestressed\": \"预应力\",\n        \"tensioningMethod\": \"\", // 若无张拉方式，传空字符串\n        \"constructionMethod\": \"现浇\"\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
