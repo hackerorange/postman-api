@@ -19,7 +19,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n    \"uid\": \"1\"\n}",
+							"raw": "{\n    \"uid\": \"1024\"\n}",
 							"options": {
 								"raw": {
 									"language": "json"
