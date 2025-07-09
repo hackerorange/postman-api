@@ -167,7 +167,7 @@
 							"variable": [
 								{
 									"key": "aiTaskId",
-									"value": "1043672587429376"
+									"value": "{{aiTaskId}}"
 								}
 							]
 						}
