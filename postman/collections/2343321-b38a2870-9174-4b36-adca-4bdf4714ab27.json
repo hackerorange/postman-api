@@ -233,7 +233,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\n        \"input\": {\n            \"hasValue\": true,\n            \"quantityContentName\": \"C50\",\n            \"structureType\": \"上部结构-梁部-预制\",\n            \"unit\": \"立方米\",\n            \"value\": \"7695.6\"\n        },\n        \"uid\": \"539\"\n    }\n]",
+							"raw": "[\n    {\n        \"input\": {\n            \"hasValue\": true,\n            \"quantityContentName\": \"C50\",\n            \"structureType\": \"上部结构-梁部-预制\",\n            \"unit\": \"10m3\",\n            \"value\": \"7695.6\"\n        },\n        \"uid\": \"539\"\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -241,7 +241,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items?options=replace",
 							"host": [
 								"{{domain}}"
 							],
@@ -257,8 +257,7 @@
 							"query": [
 								{
 									"key": "options",
-									"value": "replace",
-									"disabled": true
+									"value": "replace"
 								}
 							],
 							"variable": [
