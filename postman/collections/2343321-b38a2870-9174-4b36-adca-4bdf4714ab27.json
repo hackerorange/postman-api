@@ -95,7 +95,7 @@
 						"header": [
 							{
 								"key": "x-group-by-hash",
-								"value": "",
+								"value": "true",
 								"type": "text"
 							}
 						],
