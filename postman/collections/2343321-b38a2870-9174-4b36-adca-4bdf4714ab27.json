@@ -85,6 +85,48 @@
 					"response": []
 				},
 				{
+					"name": "获取AI智能匹配任务下的所有明细任务 Copy",
+					"id": "2343321-7aa49ccf-aff5-4a85-952d-95ae99744567",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"items"
+							],
+							"variable": [
+								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "获取AI智能匹配任务的当前状态",
 					"id": "2343321-aee5754c-2579-41ef-b47b-6e9f4accf96d",
 					"protocolProfileBehavior": {
