@@ -85,7 +85,7 @@
 					"response": []
 				},
 				{
-					"name": "获取AI智能匹配任务下的所有明细任务 Copy",
+					"name": "获取AI智能匹配任务下的所有明细任务【按hash分组】",
 					"id": "2343321-7aa49ccf-aff5-4a85-952d-95ae99744567",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
@@ -124,6 +124,55 @@
 							],
 							"variable": [
 								{
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "获取AI智能匹配任务下的所有明细任务【按hash分组】 Copy",
+					"id": "2343321-9293014c-c2f7-42a5-bf54-b44d3067f7cf",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-group-by-hash",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"items"
+							],
+							"variable": [
+								{
+									"id": "03f6d4a7-4a28-4ccd-91ec-6e6ae1b40348",
 									"key": "aiTaskId",
 									"value": "{{aiTaskId}}"
 								}
