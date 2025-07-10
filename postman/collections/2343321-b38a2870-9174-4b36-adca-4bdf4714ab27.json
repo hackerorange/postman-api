@@ -157,7 +157,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items/count",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items/statistics",
 							"host": [
 								"{{domain}}"
 							],
@@ -169,7 +169,7 @@
 								"aiTasks",
 								":aiTaskId",
 								"items",
-								"count"
+								"statistics"
 							],
 							"variable": [
 								{
