@@ -157,7 +157,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items/count",
 							"host": [
 								"{{domain}}"
 							],
@@ -168,11 +168,11 @@
 								"{{sceneCode}}",
 								"aiTasks",
 								":aiTaskId",
-								"items"
+								"items",
+								"count"
 							],
 							"variable": [
 								{
-									"id": "03f6d4a7-4a28-4ccd-91ec-6e6ae1b40348",
 									"key": "aiTaskId",
 									"value": "{{aiTaskId}}"
 								}
