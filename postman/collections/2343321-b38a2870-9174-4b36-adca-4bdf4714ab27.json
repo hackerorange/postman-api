@@ -480,6 +480,23 @@
 				}
 			],
 			"id": "2343321-70595b23-eba3-4926-9051-ab266a8bb4a5"
+		},
+		{
+			"name": "New Folder",
+			"item": [],
+			"id": "2343321-e5972da4-28e7-4d2f-bb81-184d1e3031ed"
+		},
+		{
+			"name": "New Request",
+			"id": "2343321-13ff9d5b-3882-4305-b54c-ec91eadab44a",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
 		}
 	],
 	"auth": {
