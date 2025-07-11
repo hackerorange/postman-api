@@ -173,6 +173,56 @@
 					"response": []
 				},
 				{
+					"name": "获取AI智能匹配任务下的所有明细任务统计 Copy",
+					"id": "2343321-ab434c13-ad36-4be2-a518-c08084337393",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-group-by-hash",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items/statistics",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"aiTasks",
+								":aiTaskId",
+								"items",
+								"statistics"
+							],
+							"variable": [
+								{
+									"id": "f2d624e8-7b8e-49c0-8f90-ce3e8a7df582",
+									"key": "aiTaskId",
+									"value": "{{aiTaskId}}"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
 					"name": "获取AI智能匹配任务的当前状态",
 					"id": "2343321-aee5754c-2579-41ef-b47b-6e9f4accf96d",
 					"protocolProfileBehavior": {
