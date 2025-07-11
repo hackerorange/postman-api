@@ -471,7 +471,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items/statistics",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/rules",
 							"host": [
 								"{{domain}}"
 							],
@@ -479,18 +479,7 @@
 								"{{service-prefix}}",
 								"v4",
 								"aiScenes",
-								"{{sceneCode}}",
-								"aiTasks",
-								":aiTaskId",
-								"items",
-								"statistics"
-							],
-							"variable": [
-								{
-									"id": "f2d624e8-7b8e-49c0-8f90-ce3e8a7df582",
-									"key": "aiTaskId",
-									"value": "{{aiTaskId}}"
-								}
+								"rules"
 							]
 						}
 					},
