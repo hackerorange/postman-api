@@ -10,6 +10,19 @@
 			"item": [
 				{
 					"name": "创建AI智能匹配任务",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "ad9d5dfa-7d25-402b-a476-aee7e26faf9e",
+								"exec": [
+									"pm.collectionVariables[\"aiTaskId\"] = pm.response.json().data.id;"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "2343321-a9a49fda-56ed-4ad7-8586-54be74b62f12",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
