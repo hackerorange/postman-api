@@ -14,9 +14,9 @@
 						{
 							"listen": "test",
 							"script": {
-								"id": "ad9d5dfa-7d25-402b-a476-aee7e26faf9e",
+								"id": "d450f91c-629f-40e5-8a63-facc2fa57d93",
 								"exec": [
-									"pm.collectionVariables[\"aiTaskId\"] = pm.response.json().data.id;"
+									"pm.collectionVariables.set(\"aiTaskId\", pm.response.json().data.id);"
 								],
 								"type": "text/javascript",
 								"packages": {}
