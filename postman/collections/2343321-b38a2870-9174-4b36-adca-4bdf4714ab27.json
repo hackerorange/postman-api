@@ -57,6 +57,59 @@
 				},
 				{
 					"name": "获取AI智能匹配任务下的所有明细任务",
+					"event": [
+						{
+							"listen": "test",
+							"script": {
+								"id": "5524727b-d22c-4503-8b68-8399884c63b7",
+								"exec": [
+									"var template = `",
+									"<style type=\"text/css\">",
+									"    .tftable {font-size:14px;color:#333333;width:100%;border-width: 1px;border-color: #87ceeb;border-collapse: collapse;}",
+									"    .tftable th {font-size:18px;background-color:#87ceeb;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;text-align:left;}",
+									"    .tftable tr {background-color:#ffffff;}",
+									"    .tftable td {font-size:14px;border-width: 1px;padding: 8px;border-style: solid;border-color: #87ceeb;}",
+									"    .tftable tr:hover {background-color:#e0ffff;}",
+									"    .success {color: green;}",
+									"</style>",
+									"",
+									"<table class=\"tftable\" border=\"1\">",
+									"    <tr>",
+									"        <th>ID</th>",
+									"        <th>UID</th>",
+									"        <th>Hash</th>",
+									"        <th>Status</th>",
+									"        <th>AI Task ID</th>",
+									"        <th>Input</th>",
+									"        <th>Output Detail</th>",
+									"    </tr>",
+									"    ",
+									"    {{#each response.data}}",
+									"        <tr>",
+									"            <td>{{id}}</td>",
+									"            <td>{{uid}}</td>",
+									"            <td>{{hash}}</td>",
+									"            <td class=\"{{#if (eq status 2)}}success{{/if}}\">{{status}}</td>",
+									"            <td>{{aiTaskId}}</td>",
+									"            <td>{{input}}</td>",
+									"            <td>{{output.outputDetail}}</td>",
+									"        </tr>",
+									"    {{/each}}",
+									"</table>",
+									"`;",
+									"",
+									"function constructVisualizerPayload() {",
+									"    var res = pm.response.json();",
+									"    return { response: res };",
+									"}",
+									"",
+									"pm.visualizer.set(template, constructVisualizerPayload());"
+								],
+								"type": "text/javascript",
+								"packages": {}
+							}
+						}
+					],
 					"id": "2343321-a3455b3b-1a2e-4a08-8e72-4ccaa55d6187",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
