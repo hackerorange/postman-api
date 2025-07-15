@@ -334,7 +334,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "[\n    {\n        \"input\": {\n            \"hasValue\": true,\n            \"quantityContentName\": \"C50\",\n            \"structureType\": \"上部结构-梁部-预制111\",\n            \"unit\": \"cm3\",\n            \"value\": \"7695.6\"\n        },\n        \"uid\": \"539\"\n    }, {\n        \"input\": {\n            \"hasValue\": true,\n            \"quantityContentName\": \"C50\",\n            \"structureType\": \"上部结构-梁部-预制222\",\n            \"unit\": \"cm3\",\n            \"value\": \"7695.6\"\n        },\n        \"uid\": \"540\"\n    }, {\n        \"input\": {\n            \"hasValue\": true,\n            \"quantityContentName\": \"C50\",\n            \"structureType\": \"上部结构-梁部-预制333\",\n            \"unit\": \"cm3\",\n            \"value\": \"7695.6\"\n        },\n        \"uid\": \"541\"\n    }\n]",
+							"raw": "[\n    {\n        \"input\": {\n            \"structureType\": \"附属结构-桥面连续、桥面铺装\",\n            \"quantityContentName\": \"桥面沥青砼铺装\",\n            \"unit\": \"m2\",\n            \"hasValue\": true,\n            \"value\": 971.3\n        },\n        \"uid\": \"{{$randomUUID}}\"\n    }\n]",
 							"options": {
 								"raw": {
 									"language": "json"
