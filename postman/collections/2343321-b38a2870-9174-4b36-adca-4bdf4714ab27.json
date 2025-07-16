@@ -377,6 +377,11 @@
 			"name": "ai任务详情",
 			"item": [
 				{
+					"name": "New Folder",
+					"item": [],
+					"id": "2343321-a85d2d5d-1808-4e69-9a12-e40578fa9d4e"
+				},
+				{
 					"name": "向AI智能匹配任务中添加输入",
 					"id": "2343321-919d01f4-b60c-4f50-82dd-0ba752f06ee4",
 					"protocolProfileBehavior": {
@@ -491,6 +496,18 @@
 								"status-by-ids"
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "New Request",
+					"id": "2343321-190919bc-bbf5-44e3-9bc1-9a0341ceb342",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
