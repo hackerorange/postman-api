@@ -166,7 +166,7 @@
 							}
 						},
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items?statusList=1",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items?status=1",
 							"host": [
 								"{{domain}}"
 							],
@@ -181,7 +181,7 @@
 							],
 							"query": [
 								{
-									"key": "statusList",
+									"key": "status",
 									"value": "1"
 								}
 							],
