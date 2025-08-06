@@ -118,7 +118,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items",
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/aiTasks/:aiTaskId/items?status=1",
 							"host": [
 								"{{domain}}"
 							],
@@ -130,6 +130,12 @@
 								"aiTasks",
 								":aiTaskId",
 								"items"
+							],
+							"query": [
+								{
+									"key": "status",
+									"value": "1"
+								}
 							],
 							"variable": [
 								{
