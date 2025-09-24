@@ -19,7 +19,8 @@
 									"pm.collectionVariables.set(\"aiTaskId\", pm.response.json().data.id);"
 								],
 								"type": "text/javascript",
-								"packages": {}
+								"packages": {},
+								"requests": {}
 							}
 						}
 					],
