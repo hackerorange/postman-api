@@ -619,9 +619,10 @@
 		{
 			"listen": "prerequest",
 			"script": {
-				"id": "cc36cddc-61dc-46ab-8dd3-508fe3c42f4f",
+				"id": "2cedf891-6cf2-40d4-a17b-22a9436381fd",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -630,9 +631,10 @@
 		{
 			"listen": "test",
 			"script": {
-				"id": "ba059021-1f26-4f96-a182-3ec4c6696aee",
+				"id": "7d3af935-4dde-4b4b-b453-51a4e534bb33",
 				"type": "text/javascript",
 				"packages": {},
+				"requests": {},
 				"exec": [
 					""
 				]
@@ -642,23 +644,19 @@
 	"variable": [
 		{
 			"key": "service-prefix",
-			"value": "api/lmm-standard/v4",
-			"type": "string"
+			"value": "api/lmm-standard/v4"
 		},
 		{
 			"key": "x-product-code",
-			"value": "gpmpp_standard-material",
-			"type": "string"
+			"value": "gpmpp_standard-material"
 		},
 		{
 			"key": "aiTaskId",
-			"value": "1039075472097792",
-			"type": "default"
+			"value": "1039075472097792"
 		},
 		{
 			"key": "sceneCode",
-			"value": "smartBidGenerator",
-			"type": "string"
+			"value": "smartBidGenerator"
 		}
 	]
 }
