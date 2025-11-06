@@ -584,7 +584,7 @@
 			"name": "劳务规则",
 			"item": [
 				{
-					"name": "获取AI智能匹配任务下的所有明细任务统计 Copy 2",
+					"name": "获取所有劳务规则",
 					"id": "2343321-5fce6578-bc28-43d2-a6ae-c7573ff445a9",
 					"protocolProfileBehavior": {
 						"disableBodyPruning": true
