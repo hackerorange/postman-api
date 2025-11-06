@@ -538,18 +538,6 @@
 			"name": "规则列表",
 			"item": [
 				{
-					"name": "New Request",
-					"id": "2343321-d8110a1d-6400-4e68-b552-129ba938f342",
-					"protocolProfileBehavior": {
-						"disableBodyPruning": true
-					},
-					"request": {
-						"method": "GET",
-						"header": []
-					},
-					"response": []
-				},
-				{
 					"name": "获取AI智能匹配任务下的所有明细任务统计 Copy",
 					"id": "2343321-ab434c13-ad36-4be2-a518-c08084337393",
 					"protocolProfileBehavior": {
@@ -594,7 +582,48 @@
 		},
 		{
 			"name": "劳务规则",
-			"item": [],
+			"item": [
+				{
+					"name": "获取AI智能匹配任务下的所有明细任务统计 Copy 2",
+					"id": "2343321-5fce6578-bc28-43d2-a6ae-c7573ff445a9",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "x-group-by-hash",
+								"value": "true",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "[\n    {\n        \"uid\": \"a01\",\n        \"input\": {\n            \"quantityDescription\": \"混凝土\",\n            \"structureDescription\": \"asfaf\",\n            \"unit\":\"立方米\"\n        }\n    }\n]",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{domain}}/{{service-prefix}}/v4/aiScenes/{{sceneCode}}/rules",
+							"host": [
+								"{{domain}}"
+							],
+							"path": [
+								"{{service-prefix}}",
+								"v4",
+								"aiScenes",
+								"{{sceneCode}}",
+								"rules"
+							]
+						}
+					},
+					"response": []
+				}
+			],
 			"id": "2343321-17d36eaa-5863-4006-afd9-43e9a5448326"
 		},
 		{
